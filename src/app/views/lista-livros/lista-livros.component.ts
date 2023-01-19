@@ -1,3 +1,4 @@
+import { LivrosResultado } from './../../models/interfaces';
 import { LivroService } from './../../service/livro.service';
 import { Component, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
