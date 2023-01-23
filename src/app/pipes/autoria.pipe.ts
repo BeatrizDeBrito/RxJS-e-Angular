@@ -6,10 +6,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class AutoriaPipe implements PipeTransform {
 
   transform(autoria: string[]): string {
-   if(autoria){
-    return autoria[0]
-   }
-   return''
+    if(autoria) {
+      return autoria[0]
+    }
+    return ''
   }
 
 }
