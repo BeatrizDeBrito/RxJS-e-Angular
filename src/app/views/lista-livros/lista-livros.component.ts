@@ -2,7 +2,7 @@ import { LivroVolumeInfo } from './../../models/livroVolumeInfo';
 import { Subscription } from 'rxjs';
 import { Component, OnDestroy } from '@angular/core';
 import { LivroService } from 'src/app/service/livro.service';
-import { Livro } from 'src/app/models/interfaces';
+import { Item, Livro } from 'src/app/models/interfaces';
 
 @Component({
   selector: 'app-lista-livros',
@@ -15,7 +15,6 @@ export class ListaLivrosComponent implements OnDestroy{
   campoBusca: string = ''
   subscription: Subscription
   livro: Livro
-
   constructor(private service: LivroService) { }
 
   buscarLivros() {
